@@ -158,7 +158,7 @@
 
         #region UpdateForm
 
-        public string GoToGitHub { get; set; } = "Github'a git";
+        public string GoToGitHub { get; set; } = "Güncelle";
         public string SupportDeveloper { get; set; } = "Destek geliştirici";
 
         #endregion

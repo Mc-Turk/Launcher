@@ -544,7 +544,7 @@ namespace FreeLauncher.Forms
             this.LangDropDownList.Name = "LangDropDownList";
             this.LangDropDownList.Size = new System.Drawing.Size(202, 24);
             this.LangDropDownList.TabIndex = 3;
-            this.LangDropDownList.Text = "Русский (ru-RU)";
+            this.LangDropDownList.Text = "Türkçe (tr-TR)";
             this.LangDropDownList.ThemeName = "VisualStudio2012Dark";
             this.LangDropDownList.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.LangDropDownList_SelectedIndexChanged);
             // 
