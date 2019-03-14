@@ -21,12 +21,12 @@ build:
 before_deploy:
 - ps: >-
     if ($env:APPVEYOR_REPO_TAG -eq "true") {
-      Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\FreeLauncher.exe -DeploymentName deployment
+      Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\Mc-Turk.exe -DeploymentName deployment
       Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\FreeLauncher.zip -DeploymentName deployment
     }
 
 artifacts:
-- path: \src\FreeLauncher\bin\$(CONFIGURATION)\FreeLauncher.exe
+- path: \src\FreeLauncher\bin\$(CONFIGURATION)\Mc-Turk.exe
 
 deploy:
   provider: GitHub
