@@ -22,7 +22,7 @@ before_deploy:
 - ps: >-
     if ($env:APPVEYOR_REPO_TAG -eq "true") {
       Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\McTurk.exe -DeploymentName deployment
-      Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\McTurk.zip -DeploymentName deployment
+      Push-AppveyorArtifact .\src\FreeLauncher\bin\$env:CONFIGURATION\FreeLauncher.zip -DeploymentName deployment
     }
 
 artifacts:
@@ -36,5 +36,5 @@ deploy:
   draft: false
   prerelease: false
   on:
-    branch: Launcher
+    branch: master
     appveyor_repo_tag: true

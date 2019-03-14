@@ -520,7 +520,7 @@ Please, check for your Internet configuration and restart the launcher.
             if (_configuration.Arguments.OfflineMode) {
                 return;
             }
-            if (newsBrowser.Url != new Uri("http://Mc-Turk.github.io/Launcher/")) {
+            if (newsBrowser.Url != new Uri("http://Mc-Turk.github.io/Launcher")) {
                 BackWebButton.Enabled = newsBrowser.CanGoBack;
                 ForwardWebButton.Enabled = newsBrowser.CanGoForward;
                 navBar.Text = newsBrowser.Url?.ToString();
