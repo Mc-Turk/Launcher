@@ -1,7 +1,7 @@
 language: csharp
 solution: Mc-Turk.sln
 install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" FreeLauncher.sln
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" Mc-Turk.sln
 script:
 - xbuild /validate ./src/dotMCLauncher/dotMCLauncher.csproj
 - xbuild /validate ./src/dotMCLauncher.Networking/dotMCLauncher.Networking.csproj
